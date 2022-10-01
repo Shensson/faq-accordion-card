@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%))
+    
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    max-width: 350px;
+    width: 350px;
+    margin-top: 100px;
+    padding: 20px;
+    padding-top: 100px;
+    background-color: white;
+    border-radius: 20px;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: hsl(237, 12%, 33%);
+    font-size: 12px;
+    box-shadow: 0px 30px 60px -40px ;
+}
+.card h1{
+    grid-row: 1;
+    text-align: center;
+    grid-column: 2;
+}
+.container{
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: auto;
+    padding-bottom: 20px;
+    width: auto;
+}
+.question{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 90% 10%;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+.dropbtn{
+    color: hsl(240, 6%, 50%);
+    text-align: left;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.dropbtn:hover{
+    color: hsl(14, 88%, 65%);
+    font-weight: 700;
+}
+ .dropbtn:focus{
+    color: hsl(238, 29%, 16%);
+    font-weight: 700;
+}
+.answear{
+    display: none;
+}
+
+.rotate-arrow{
+    rotate: 180deg;
+}
+
+.show{
+    display: block;
+    transition: 0.5s;
+}
+.mobile{
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 172px;
+    margin-top: 10px;
+    background-image: url(images/bg-pattern-mobile.svg);
+    background-size: contain;
+}
+.shadow-mobile{
+    position: absolute;
+    top: 0px;
+    width: 200px;
+}
+.desktop{
+    display: none;
+}
+
+@media (min-width: 750px){
+    body{
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%))
+    }
+    main{
+        overflow: hidden;
+    }
+    .card{
+        display: flex;
+        justify-content: flex-end;
+        min-width: 750px;
+        width: 750px;
+        padding: 20px;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        background-color: white;
+        border-radius: 20px;
+        font-family: 'Kumbh Sans', sans-serif;
+        color: hsl(237, 12%, 33%);
+        font-size: 12px;
+        box-shadow: 0px 30px 60px -40px; 
+        overflow: hidden;     
+    }
+    .card h1{
+        text-align: left;
+    }
+    .wrapper{
+        justify-content: flex-start;
+    } 
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display: block;
+        position: absolute;
+        margin-top: 50px;
+        margin-left: -75px;
+        height: 300px;
+        z-index: 2;
+    }
+    .shadow-desktop{
+        display: block;
+        position: absolute;
+        margin-top: -630px;
+        margin-left: -330px;
+        height: 800px;
+        width: 800px;
+        z-index: -1;
+    }
+    .box{
+        position: absolute;
+        top: 140px;
+        left: -25px;
+    }
+    .container{
+        width: 300px;
+    }
+    
+}

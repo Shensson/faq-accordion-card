@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>FAQ</title>
+</head>
+<body>
+  <main>
+    <div class="wrapper">
+      <div class="mobile">
+        <img src="images/illustration-woman-online-mobile.svg" alt="">
+      </div>
+      <div class="desktop">
+        <img class="box" src="images/illustration-box-desktop.svg" alt="">
+        <img src="images/illustration-woman-online-desktop.svg" alt="">
+        <img class="shadow-desktop" src="images/bg-pattern-desktop.svg" alt="">
+      </div>
+      <div class="card">
+        <div class="container">
+          <h1 style="grid-column: 1;">FAQ</h1>
+          <div class="question" style="grid-row: 2;">
+            <button class="dropbtn" onclick="opena1()">How many team members can I invite?</button>
+            <img id="arrow1" src="images/icon-arrow-down.svg" alt="">
+            <p id="answer1" class="answear">You can invite up to 2 additional users on the Free plan. There is no limit on 
+              team members for the Premium plan.</p>
+          </div>
+          <div class="question" style="grid-row: 3;">
+            <button class="dropbtn" onclick="opena2()">What is the maximum file upload size?</button>
+            <img id="arrow2" src="images/icon-arrow-down.svg" alt="">
+            <p id="answer2" class="answear">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+          </div>
+          <div class="question" style="grid-row: 4;" onclick="opena3()">
+            <button class="dropbtn">How do I reset my password?</button>
+            <img id="arrow3" src="images/icon-arrow-down.svg" alt="">
+            <p class="answear" id="answer3">Click “Forgot password” from the login page or “Change password” from your profile page.
+              A reset link will be emailed to you.</p>
+          </div>
+          <div class="question" style="grid-row: 5;" onclick="opena4()">
+            <button class="dropbtn">Can I cancel my subscription?</button>
+            <img id="arrow4" src="images/icon-arrow-down.svg" alt="">
+            <p class="answear" id="answer4">Yes! Send us a message and we’ll process your request no questions asked.</p>
+          </div>
+          <div class="question" style="grid-row: 6;" onclick="opena5()">
+            <button class="dropbtn">Do you provide additional support?</button>
+            <img id="arrow5" src="images/icon-arrow-down.svg" alt="">
+            <p class="answear" id="answer5">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      </main>
+  <script src="main.js"></script>
+</body>
+</html>
